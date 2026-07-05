@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#f7f8fc;
+}
+
+.navbar{
+    height:75px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 40px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    margin-bottom: 0;
+}
+
+.logo{
+    height:70px;
+    cursor:pointer;
+}
+
+.nav-search{
+    width:45%;
+    height:46px;
+    display:flex;
+}
+
+.nav-search input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:#f2f3f5;
+    padding-left:20px;
+    font-size:15px;
+    border-radius:10px 0 0 10px;
+}
+
+.nav-search button{
+    width:60px;
+    border:none;
+    background:#8B5CF6;
+    color:white;
+    border-radius:0 10px 10px 0;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.nav-icons{
+    display:flex;
+    gap:25px;
+}
+
+.nav-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.nav-item i{
+    color:#8B5CF6;
+}
+
+
+.hero{
+    display:flex;
+    min-height:650px;
+    background:linear-gradient(135deg, white, #f6f1ff);
+    border-radius:30px;
+    overflow:hidden;
+    margin:0 40px 40px;
+    margin-top: 10px;
+}
+
+
+
+.hero-content{
+    flex:0.4;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:80px;
+}
+
+.hero-content h1{
+    font-size:72px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero-content span{
+    display:block;
+}
+
+header{
+    background:white;
+}
+
+
+
+span{
+    color:#8B5CF6;
+    font-weight:700;
+
+}
+
+
+
+.hero-image{
+    flex:0.6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background:#f3ecff;
+}
+
+.hero-image img{
+    width:95%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero-image img:hover{
+    transform:translateY(-8px);
+}
+
+.hero-text{
+    margin:25px 0;
+    font-size:20px;
+    color:#555;
+    line-height:1.6;
+}
+
+
+.hero-description{
+    font-size:22px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    cursor:pointer;
+    font-size:15px;
+    color:#8B5CF6;
+    gap:10px;
+}
+
+.hero-buttons button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:16px 26px;
+    padding:18px 32px;
+    border-radius:15px;
+    font-size:17px;
+    font-weight:600;
+}
+
+.hero-buttons button:hover{
+    transform:translateY(-5px);
+    transition:.3s ease;
+}
