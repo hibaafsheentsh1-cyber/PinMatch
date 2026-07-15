@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    box-sizing:border-box; /* Includes padding & border inside width/height */
     font-family:Poppins,sans-serif;
 }
 
@@ -12,12 +12,12 @@ body{
 .navbar{
     height:75px;
     background:white;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 40px;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-    margin-bottom: 0;
+    display:flex; /* Enables Flexbox */
+    align-items:center; /* Centers items vertically */
+    justify-content:space-between; /* Spaces items across the navbar */
+    padding:0 20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08); /* Adds a soft shadow */
+    margin-bottom:0;
 }
 
 .logo{
@@ -26,19 +26,19 @@ body{
 }
 
 .nav-search{
-    width:45%;
-    height:46px;
+    width:50%;
+    height:50px;
     display:flex;
 }
 
 .nav-search input{
-    flex:1;
+    flex:1; /* Takes up the remaining available space */
     border:none;
-    outline:none;
+    outline:none; /* Removes default focus outline */
     background:#f2f3f5;
     padding-left:20px;
     font-size:15px;
-    border-radius:10px 0 0 10px;
+    border-radius:10px 0 0 10px; /* Rounds only the left corners */
 }
 
 .nav-search button{
@@ -46,14 +46,14 @@ body{
     border:none;
     background:#8B5CF6;
     color:white;
-    border-radius:0 10px 10px 0;
+    border-radius:0 10px 10px 0; /* Rounds only the right corners */
     cursor:pointer;
     font-size:18px;
 }
 
 .nav-icons{
     display:flex;
-    gap:25px;
+    gap:25px; /* Space between items */
 }
 
 .nav-item{
@@ -68,53 +68,44 @@ body{
     color:#8B5CF6;
 }
 
-
 .hero{
     display:flex;
     min-height:650px;
-    background:linear-gradient(135deg, white, #f6f1ff);
-    border-radius:30px;
-    overflow:hidden;
-    margin:0 40px 40px;
-    margin-top: 10px;
+    background:linear-gradient(135deg, white, #f6f1ff); /* Creates a gradient background */
+    border-radius:0px;
+    overflow:hidden; /* Hides overflowing content */
+    margin:0px;
 }
 
-
-
 .hero-content{
-    flex:0.4;
+    flex:0.4; /* Uses 40% of the available flex space */
     display:flex;
-    flex-direction:column;
-    justify-content:center;
+    flex-direction:column; /* Stacks children vertically */
+    justify-content:space-evenly; /* Even spacing between items */
     padding:80px;
 }
 
 .hero-content h1{
     font-size:72px;
-    line-height:1.1;
+    line-height:1.1; /* Controls spacing between text lines */
     margin-bottom:25px;
 }
 
 .hero-content span{
-    display:block;
+    display:block; /* Starts on a new line */
 }
 
 header{
     background:white;
 }
 
-
-
 span{
     color:#8B5CF6;
     font-weight:700;
-
 }
 
-
-
 .hero-image{
-    flex:0.6;
+    flex:0.7; /* Uses 70% of the available flex space */
     display:flex;
     justify-content:center;
     align-items:center;
@@ -125,11 +116,7 @@ span{
 .hero-image img{
     width:95%;
     height:100%;
-    object-fit:cover;
-}
-
-.hero-image img:hover{
-    transform:translateY(-8px);
+    object-fit:cover; /* Keeps image proportions while filling the container */
 }
 
 .hero-text{
@@ -139,22 +126,13 @@ span{
     line-height:1.6;
 }
 
-
-.hero-description{
-    font-size:22px;
-    color:#555;
-    line-height:1.8;
-    margin-bottom:35px;
-}
-
 .hero-buttons{
     display:flex;
     align-items:center;
-    gap:8px;
+    gap:10px;
     cursor:pointer;
     font-size:15px;
     color:#8B5CF6;
-    gap:10px;
 }
 
 .hero-buttons button{
@@ -162,7 +140,6 @@ span{
     align-items:center;
     justify-content:center;
     gap:10px;
-    padding:16px 26px;
     padding:18px 32px;
     border-radius:15px;
     font-size:17px;
@@ -170,28 +147,27 @@ span{
 }
 
 .hero-buttons button:hover{
-    transform:translateY(-5px);
-    transition:.3s ease;
+    transform:translateY(-5px); /* Moves button up slightly */
+    transition:.3s ease; /* Smooth animation */
 }
 
 .categories{
-    background-color: white;
+    background-color:white;
     padding:60px 40px;
-
 }
 
 .categories h2{
-    color: #8B5CF6;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 50px;    
+    color:#8B5CF6;
+    text-align:center;
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:50px;
 }
 
 .category-container{
-    display: grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
+    display:grid;
+    grid-template-columns:repeat(5,1fr); /* Creates 5 equal-width columns */
+    gap:20px;
 }
 
 .category-card{
@@ -204,22 +180,21 @@ span{
     border:2px solid #ececec;
     border-radius:18px;
     cursor:pointer;
-    transition:0.3s ease;
+    transition:0.3s ease; /* Smooth hover effect */
 }
 
 .category-card i{
     width:80px;
     height:80px;
-    border-radius:50%;
+    border-radius:50%; /* Makes the icon background circular */
     background:#f3ecff;
     color:#8B5CF6;
     display:flex;
     justify-content:center;
     align-items:center;
     font-size:32px;
-    margin-bottom: 20px;
+    margin-bottom:20px;
     transition:0.3s ease;
-
 }
 
 .category-card h3{
@@ -228,7 +203,6 @@ span{
 }
 
 .category-card:hover i{
-    border-color:#8B5CF6;
     transform:translateY(-2px);
 }
 
